@@ -1,309 +1,751 @@
-<!DOCTYPE html>
-<html>
-<title>Curriculum César de Oliveira Ferreira Silva</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Curriculum vitae of César de Oliveira Ferreira Silva, Data Scientist with experience in remote sensing, GIS, hydrological modelling, and machine learning.">
+  <meta name="theme-color" content="#0f766e">
 
-<link rel='stylesheet' href='https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/GoogleInconsolata'>
-  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Inconsolata", sans-serif}
-</style>
-<body class="w3-black">
+  <title>Curriculum Vitae | César de Oliveira Ferreira Silva</title>
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #111827;
+      --panel-2: #0f172a;
+      --border: #243044;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #14b8a6;
+      --accent-2: #0f766e;
+      --link: #7dd3fc;
+      --shadow: 0 16px 40px rgba(0, 0, 0, .25);
+      --radius: 20px;
+      --radius-sm: 14px;
+      --maxw: 1240px;
+    }
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-black w3-text-white w3-card-4">
-        <div class="w3-display-container">
-          <img src="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/avatar.JPG" style="width:200px" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2 style="color: white">César de Oliveira Ferreira Silva</h2>
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(20, 184, 166, .10), transparent 35%),
+        linear-gradient(180deg, #070b10 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus-visible {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: 12px;
+      background: #fff;
+      color: #000;
+      padding: .75rem 1rem;
+      border-radius: 999px;
+      z-index: 1000;
+    }
+
+    .skip-link:focus {
+      left: 12px;
+    }
+
+    .page {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .sidebar,
+    .content > section,
+    .footer {
+      background: rgba(17, 24, 39, .90);
+      border: 1px solid rgba(36, 48, 68, .85);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+
+    .sidebar {
+      border-radius: var(--radius);
+      overflow: clip;
+      position: sticky;
+      top: 24px;
+    }
+
+    .profile {
+      padding: 0;
+    }
+
+    .hero {
+      position: relative;
+      background: linear-gradient(180deg, rgba(20,184,166,.20), rgba(17,24,39,.0));
+      padding-bottom: 16px;
+    }
+
+    .avatar-wrap {
+      position: relative;
+      padding: 20px 20px 0;
+    }
+
+    .avatar {
+      width: 100%;
+      max-height: 280px;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .name-block {
+      padding: 16px 20px 8px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.7rem, 3vw, 2.3rem);
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      margin: .35rem 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .profile-meta {
+      list-style: none;
+      padding: 0 20px 16px;
+      margin: 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .profile-meta li {
+      color: var(--text);
+      padding: 10px 12px;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 12px;
+    }
+
+    .profile-meta strong {
+      color: var(--muted);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .sidebar-section {
+      padding: 18px 20px 20px;
+      border-top: 1px solid rgba(255,255,255,.06);
+    }
+
+    .sidebar-section h2,
+    .content section h2 {
+      margin: 0 0 14px;
+      font-size: 1.15rem;
+      letter-spacing: .02em;
+    }
+
+    .sidebar-section p {
+      margin: 0;
+    }
+
+    .tag-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(20, 184, 166, .10);
+      border: 1px solid rgba(20, 184, 166, .22);
+      color: var(--text);
+      font-size: .92rem;
+      white-space: nowrap;
+    }
+
+    .bar-group {
+      display: grid;
+      gap: 12px;
+    }
+
+    .bar-item {
+      display: grid;
+      gap: 6px;
+    }
+
+    .bar-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: .95rem;
+    }
+
+    .bar-track {
+      height: 12px;
+      background: rgba(255,255,255,.08);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.05);
+    }
+
+    .bar-fill {
+      height: 100%;
+      width: calc(var(--level) * 1%);
+      background: linear-gradient(90deg, var(--accent-2), var(--accent));
+      border-radius: 999px;
+    }
+
+    .small-note {
+      color: var(--muted);
+      font-size: .92rem;
+      margin-top: 12px;
+    }
+
+    .content {
+      display: grid;
+      gap: 24px;
+    }
+
+    .content > section {
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .timeline,
+    .publication-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 18px;
+    }
+
+    .entry,
+    .pub-item,
+    .education-item {
+      padding: 18px;
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.06);
+    }
+
+    .entry h3,
+    .education-item h3 {
+      margin: 0 0 4px;
+      font-size: 1.02rem;
+      line-height: 1.35;
+    }
+
+    .entry .meta,
+    .education-item .meta,
+    .pub-item .meta {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .entry ul,
+    .pub-item ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+
+    .entry li + li,
+    .pub-item li + li {
+      margin-top: 6px;
+    }
+
+    .split {
+      display: grid;
+      gap: 18px;
+    }
+
+    details {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    summary::marker {
+      color: var(--accent);
+    }
+
+    .footer {
+      max-width: var(--maxw);
+      margin: 0 auto 24px;
+      border-radius: var(--radius);
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      color: var(--muted);
+    }
+
+    .social {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .social a {
+      color: var(--text);
+    }
+
+    .pill-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(20, 184, 166, .10);
+      border: 1px solid rgba(20, 184, 166, .18);
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .pill-link:hover,
+    .pill-link:focus-visible {
+      text-decoration: none;
+      border-color: rgba(20, 184, 166, .45);
+    }
+
+    @media (max-width: 1024px) {
+      .page {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+      }
+
+      .page,
+      .footer {
+        max-width: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .sidebar,
+      .content > section,
+      .footer {
+        box-shadow: none;
+        backdrop-filter: none;
+        background: #fff;
+        border: 1px solid #ddd;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="page">
+    <aside class="sidebar" aria-label="Profile sidebar">
+      <header class="profile">
+        <div class="hero">
+          <div class="avatar-wrap">
+            <img
+              src="avatar.JPG"
+              class="avatar"
+              alt="Portrait of César de Oliveira Ferreira Silva"
+              width="640"
+              height="760"
+              loading="eager"
+            >
+          </div>
+
+          <div class="name-block">
+            <h1>César de Oliveira Ferreira Silva</h1>
+            <p class="subtitle">Data Scientist · R&D · Remote Sensing · GIS · Hydrology</p>
+          </div>
+
+          <ul class="profile-meta">
+            <li>
+              <strong>Role</strong>
+              PhD
+            </li>
+            <li>
+              <strong>Location</strong>
+              São Paulo, Brasil
+            </li>
+            <li>
+              <strong>Email</strong>
+              <a href="mailto:cesar.of.silva@unesp.br">cesar.of.silva@unesp.br</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="sidebar-section" aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+        <div class="bar-group" role="list">
+          <div class="bar-item" role="listitem" style="--level:80">
+            <div class="bar-label"><span>R</span><span>80%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="bar-item" role="listitem" style="--level:75">
+            <div class="bar-label"><span>Geographic Information Systems (GIS)</span><span>75%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="bar-item" role="listitem" style="--level:75">
+            <div class="bar-label"><span>Google Earth Engine</span><span>75%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="bar-item" role="listitem" style="--level:75">
+            <div class="bar-label"><span>PostgreSQL / PostGIS</span><span>75%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="bar-item" role="listitem" style="--level:75">
+            <div class="bar-label"><span>Python</span><span>75%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="bar-item" role="listitem" style="--level:65">
+            <div class="bar-label"><span>JavaScript</span><span>65%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="bar-item" role="listitem" style="--level:60">
+            <div class="bar-label"><span>LaTeX &amp; Markdown</span><span>60%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="bar-item" role="listitem" style="--level:50">
+            <div class="bar-label"><span>HTML</span><span>50%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="bar-item" role="listitem" style="--level:30">
+            <div class="bar-label"><span>Linux shell</span><span>30%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="bar-item" role="listitem" style="--level:30">
+            <div class="bar-label"><span>AWS RDS</span><span>30%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
+          </div>
+          <div class="bar-item" role="listitem" style="--level:20">
+            <div class="bar-label"><span>C++</span><span>20%</span></div>
+            <div class="bar-track"><div class="bar-fill"></div></div>
           </div>
         </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw fa-spin w3-margin-right w3-large w3-text-teal"></i>PhD</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>São Paulo, Brasil</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>cesar.of.silva@unesp.br</p>
-          <hr>
+      </section>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-spin fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-	  
-          <p>Remote Sensing and GIS</p>
-          <p>Hydrological Modelling</p>
-	  <p>Storytelling and Data Visualization</p>
-          <p>R</p>
-          <div class="w3-light-white w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
-          </div>
-          <p>Geographic Information Systems (GIS)</p>
-          <div class="w3-light-white w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-	 <p>Google Earth Engine</p>
-          <div class="w3-light-white w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p>PostgreSQL/PostGIS</p>
-          <div class="w3-light-white w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p>Python</p>
-          <div class="w3-light-white w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p>JavaScript</p>
-          <div class="w3-light-white w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">65%</div>
-          </div>
-          <p>Latex & Markdown</p>
-          <div class="w3-light-white w3-round-xlarge w3-small">
-          <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
-          </div>
-          <p>HTML</p>
-          <div class="w3-light-white w3-round-xlarge w3-small">
-          <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <p>Shell Linux</p>
-          <div class="w3-light-white w3-round-xlarge w3-small">
-          <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">30%</div>
-          </div>
-          <p>AWS - Amazon RDS</p>
-          <div class="w3-light-white w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:30%">30%</div>
-          </div>
-          <p>C++</p>
-          <div class="w3-light-white w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:20%">20%</div>
-          </div>
+      <section class="sidebar-section" aria-labelledby="languages-title">
+        <h2 id="languages-title">Languages</h2>
+        <ul class="tag-list">
+          <li class="tag">Portuguese</li>
+          <li class="tag">Spanish</li>
+          <li class="tag">English</li>
+        </ul>
+      </section>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-spin fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>Portuguese</p>
-          <div class="w3-light-white w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-          <p>Spanish</p>
-          <div class="w3-light-white w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:90%"></div>
-          </div>
-          <p>English</p>
-          <div class="w3-light-white w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
-          </div>
+      <section class="sidebar-section" aria-labelledby="links-title">
+        <h2 id="links-title">Selected Links</h2>
+        <ul class="tag-list">
+          <li><a class="pill-link" href="https://cran.r-project.org/package=agriwater" target="_blank" rel="noopener noreferrer">agriwater on CRAN</a></li>
+          <li><a class="pill-link" href="https://github.com/cesarofs/agriwater" target="_blank" rel="noopener noreferrer">agriwater on GitHub</a></li>
+          <li><a class="pill-link" href="https://www.embrapa.br/busca-de-publicacoes/-/publicacao/1116966/tutorial-do-pacote-agriwater-para-modelagem-espacial-da-evapotranspiracao-no-software-r" target="_blank" rel="noopener noreferrer">Book</a></li>
+        </ul>
+      </section>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-certificate fa-spin fa-fw w3-margin-right w3-text-teal"></i>R Packages</b></p>
-          <li><a href="https://cran.r-project.org/package=agriwater">agriwater 1.0.1 (CRAN)</a></li>
-          <li><a href="https://github.com/cesarofs/agriwater" >agriwater 1.0.2 (GitHub)</a></li>
+      <section class="sidebar-section" aria-labelledby="media-title">
+        <h2 id="media-title">Media</h2>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=FNHIUfQyIa8" target="_blank" rel="noopener noreferrer">Climatempo</a></li>
+          <li><a href="https://podcast.unesp.br/14352/podirrigar-pesquisador-da-unesp-elabora-software-que-analisa-estimativa-da-evapotranspiracao" target="_blank" rel="noopener noreferrer">Rádio Unesp 1</a></li>
+          <li><a href="https://podcast.unesp.br/14351/podirrigar-estudo-da-unesp-enfoca-melhoria-em-recargas-de-aquiferos-em-terras-impactadas-pelo-uso-e-ocupacoes" target="_blank" rel="noopener noreferrer">Rádio Unesp 2</a></li>
+          <li><a href="https://www.ipt.br/noticia/1566-tecnologia_a_favor_da_agua.htm" target="_blank" rel="noopener noreferrer">IPT</a></li>
+        </ul>
+      </section>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-book fa-spin fa-fw w3-margin-right w3-text-teal"></i>Books</b></p>
-          <li><a href="https://www.embrapa.br/busca-de-publicacoes/-/publicacao/1116966/tutorial-do-pacote-agriwater-para-modelagem-espacial-da-evapotranspiracao-no-software-r">Tutorial do pacote Agriwater para modelagem espacial da evapotranspiração no software R.</a></li>
+      <section class="sidebar-section" aria-labelledby="awards-title">
+        <h2 id="awards-title">Awards</h2>
+        <ul>
+          <li><a href="https://prpg.unicamp.br/wp-content/uploads/sites/10/2024/12/RESULTADO-FINAL-PREMIO-TESE-DESTAQUE-UNICAM-2024_2025.pdf" target="_blank" rel="noopener noreferrer">Best Thesis in Prêmio Tese Destaque UNICAMP 2024</a></li>
+          <li><a href="http://icolibri.com.br/2019/public/anais/TC2010022.pdf" target="_blank" rel="noopener noreferrer">Best Article in INOVAGRI 2019</a></li>
+          <li><a href="https://repositorio.unesp.br/handle/11449/190710" target="_blank" rel="noopener noreferrer">Master Degree</a></li>
+        </ul>
+      </section>
 
+      <section class="sidebar-section" aria-labelledby="teaching-title">
+        <h2 id="teaching-title">AI Classes</h2>
+        <p class="small-note">Portuguese materials, 2026.</p>
+        <ul>
+          <li><a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/1_Fundamentos_de_Ciencia_de_Dados_Ambientais_e_Preparacao_de_Dados.pdf" target="_blank" rel="noopener noreferrer">1. Fundamentos de Ciência de Dados Ambientais e Preparação de Dados</a></li>
+          <li><a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/2_Introducao_a_Aprendizado_de_Maquina.pdf" target="_blank" rel="noopener noreferrer">2. Introdução a Aprendizado de Máquina</a></li>
+          <li><a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/3_Clusterizacao.pdf" target="_blank" rel="noopener noreferrer">3. Clusterização</a></li>
+          <li><a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/4_Programacao_para_ML_em_Python_e_Orange.pdf" target="_blank" rel="noopener noreferrer">4. Python e Orange</a></li>
+          <li><a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/5_Arvores_de_Decisao.pdf" target="_blank" rel="noopener noreferrer">5. Árvores de Decisão</a></li>
+          <li><a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/6_Classificadores_Bagging__Boosting_e_Support_Vector_Machine.pdf" target="_blank" rel="noopener noreferrer">6. Bagging, Boosting e Support Vector Machine</a></li>
+          <li><a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/7_Classes_Desbalanceadas.pdf" target="_blank" rel="noopener noreferrer">7. Classes Desbalanceadas</a></li>
+          <li><a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/8_Metodos_para_Reducao_de_Dimensionalidade.pdf" target="_blank" rel="noopener noreferrer">8. Redução de Dimensionalidade</a></li>
+          <li><a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/9_Metodos_para_Selecao_de_Atributos.pdf" target="_blank" rel="noopener noreferrer">9. Seleção de Atributos</a></li>
+        </ul>
+      </section>
+    </aside>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-camera fa-spin fa-fw w3-margin-right w3-text-teal"></i>Media</b></p>
-          <li><a href="https://www.youtube.com/watch?v=FNHIUfQyIa8">Climatempo</a></li>
-          <li><a href="https://podcast.unesp.br/14352/podirrigar-pesquisador-da-unesp-elabora-software-que-analisa-estimativa-da-evapotranspiracao">Rádio Unesp 1</a></li>
-          <li><a href="https://podcast.unesp.br/14351/podirrigar-estudo-da-unesp-enfoca-melhoria-em-recargas-de-aquiferos-em-terras-impactadas-pelo-uso-e-ocupacoes">Rádio Unesp 2</a></li>
-          <li><a href="https://www.ipt.br/noticia/1566-tecnologia_a_favor_da_agua.htm">IPT</a></li>
-
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-trophy fa-spin fa-fw w3-margin-right w3-text-teal"></i>Awards</b></p>
-	  <li><a href="https://prpg.unicamp.br/wp-content/uploads/sites/10/2024/12/RESULTADO-FINAL-PREMIO-TESE-DESTAQUE-UNICAM-2024_2025.pdf">Best Thesis in Prêmio Tese Destaque UNICAMP 2024</a></li>
-          <li><a href="http://icolibri.com.br/2019/public/anais/TC2010022.pdf">Best Article in INOVAGRI 2019</a></li>
-          <li><a href="https://repositorio.unesp.br/handle/11449/190710">Master Degree</a></li>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-book fa-spin fa-fw w3-margin-right w3-text-teal"></i>Aulas de IA (In Portuguese)</b></p>
-          <li> IA ambiental, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/1_Fundamentos_de_Ciencia_de_Dados_Ambientais_e_Preparacao_de_Dados.pdf">1.Fundamentos de Ciência de Dados Ambientais e Preparação de Dados</a>, 2026.</li>
-          <li> IA, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/2_Introducao_a_Aprendizado_de_Maquina.pdf">2.Intro à Machine Learning</a>, 2026.</li>
-          <li> IA, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/3_Clusterizacao.pdf">3.Clusterização</a>, 2026.</li>
-          <li> IA, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/4_Programacao_para_ML_em_Python_e_Orange.pdf">4.Python e Orange</a>, 2026.</li>
-          <li> IA, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/5_Arvores_de_Decisao.pdf">5.Árvores de Decisão</a>, 2026.</li>
-          <li> IA, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/6_Classificadores_Bagging__Boosting_e_Support_Vector_Machine.pdf">6.Classificadores Bagging, Boosting e Support Vector Machine</a>, 2026.</li>
-          <li> IA, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/7_Classes_Desbalanceadas.pdf">7.Classes Desbalanceadas</a>, 2026.</li>
-          <li> IA, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/8_Metodos_para_Reducao_de_Dimensionalidade.pdf">8.Métodos para Redução de Dimensionalidade</a>, 2026.</li>
-          <li> IA, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/9_Metodos_para_Selecao_de_Atributos.pdf">9.Métodos para Seleção de Atributos</a>, 2026.</li>
-          <li> IA ambiental, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/10_IA_para_Engenharia_Ambiental.pdf">10.IA para Engenharia Ambiental</a>, 2026.</li>
-          <li> IA, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/2P_Convolucionais.pdf">11.Redes Convolucionais</a>, 2026.</li>
-          <li> IA, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/3P_Recorrentes.pdf">12.Redes Recorentes</a>, 2026.</li>
-          <li> IA, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/4P_Transformers.pdf">13.Transformers</a>, 2026.</li>
-          <li> IA, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/5P_Representacoes_latentes_e_reducao_de_dimensionalidade.pdf">14.Representaçoess latentes e redução de dimensionalidade</a>, 2026.</li>
-          <li> IA ambiental, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/6P_Estrategias_de_treinamento_em_dados_ambientais.pdf">15.Estrategias de treinamento em dados ambientais</a>, 2026.</li>
-          <li> IA ambiental, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/7P_Quantificacao_de_incerteza_e_robustez_em_redes_profundas.pdf">16.Quantificacao de incerteza e robustez em redes profundas</a>, 2026.</li>
-          <li> IA ambiental, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/9P_Sustentabilidade__etica_e_impactos_computacionais_do_Deep_Learning.pdf">17.Sustentabilidade em IA</a>, 2026.</li>
-          <li> IA ambiental, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/14_Desafios_IA.pdf">18.Desafios da IA</a>, 2026.</li>
-          <li> IA ambiental, <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/aulasia/8P_Integracao_entre_Deep_Learning_e_modelos_f%C3%BDsicos.pdf">19.Integração entre Deep Learning e Modelos Físicos</a>, 2026.</li>
-
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
- 
-      <div class="w3-container w3-card w3-black w3-margin-bottom">
-        <h2 class="w3-text-white w3-padding-16"><i class="fa fa-suitcase fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-		
-		<h5 class="w3-opacity"><b>Data Scientist - R&D Research & Data Science  / <a href="https://www.stormgeo.com/"> StormGeo</a>, SP, Brazil / Bergen, Norway</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>December 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-		        <li>Specialist in vegetation management by using satellite data and statistical learning.</li>
-			<li>Main project: GridEyeS with HVL, eSmart, European Space Agency (ESA) and ENTSO-e</li>
-			<li>Tools: AWS RDS, R, Python/Jupyter.</li>
-          <hr>
-        </div>
-        <div class="w3-container">
-		<h5 class="w3-opacity"><b>Researcher I  / <a href="http://www.agroicone.com.br"> Agroicone</a>, SP, Brazil</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2020 - December 2021</h6>
-		        <li>Specialist in Information Systems, Database and Computational Optimization. Administrator of cloud computing, database and Geographic Information Systems environments.</li>
-		        <li>Geographical data modeling, creation and maintenance of geographical and tabular databases (using PostrgreSQL/PostGIS in AWS environment).</li>
-			<li>Tools: AWS RDS, PostgreSQL, R, Python/Jupyter, Google Earth Engine.</li>
-          <hr>
-        </div>
-	      <div class="w3-container">
-		<h5 class="w3-opacity"><b>Research Assistant III  / <a href="http://www.agroicone.com.br"> Agroicone</a>, SP, Brazil</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2019 - February 2020</h6>
-			<li>Geographical data modeling, creation and maintenance of geographical and tabular databases (using PostrgreSQL/PostGIS in AWS environment).</li>
-			<li>Environmental compliance assessment with RenovaBIO and Bonsucro standards.</li>
-			<li>Large scale land use classification project management with Google Earth Engine and Convolutional Neural Networks.</li>
-			<li>Tools: PostgreSQL, R, Python/Jupyter, Google Earth Engine, QGIS, ArcGIS.</li>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Data Engineer  / <a href="http://www.siaabr.com">SIAA</a>, SP, Brazil</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>October 2018 - April 2019 </h6>
-          <li>Implementation of artificial neural networks for oceanographic applications.</li>
-		  <li>Maintenance of large scale hydrodynamic models on Linux servers.</li>
-		  <li>Environmental consulting on projects involving water resources management.</li>
-		  <li>Tools: R, Python, keras, TensorFlow, pyTorch, QGIS, Linux, CentOS, C++, AWS, JavaScript.</li>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Geoprocessing Trainee  / <a href="http://www.agroicone.com.br/"> Agroicone</a>, SP, Brazil</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2016 - June 2017</h6>
-          <li>Spatial data modeling, creation and maintenance of geographic databases (using PostrgreSQL/PostGIS) and spatial data manipulation through geographic information systems (GIS).</li>
-		  <li>WEBGIS platform development.</li>
-		  <li>Tools: PostgreSQL, ArcGIS, QGIS, i3geo, Leaflet.</li>
-
-          <hr>
-        </div>
-<!--      
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-        </div>
--->
-      </div>
-
-      <div class="w3-container w3-card w3-black">
-        <h2 class="w3-text-white w3-padding-16"><i class="fa fa-graduation-cap fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Universidade Estadual de Campinas (<a href="https://www.feagri.unicamp.br/portal/pos-graduacao">UNICAMP</a>)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2021 - April 2024</h6>
-          <p>PhD in Agricultural Engineering</p>
-          <li>Thesis title: "Data fusion for improving the modeling of yield and management zones in specialty coffees" (<a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/Thesis_Cesar_FEAGRI_Final_19_Abril_2024.pdf">In English</a>)</li>
-          <hr>
-        </div>
-	<div class="w3-container">
-          <h5 class="w3-opacity"><b>Universidade Estadual Paulista "Júlio de Mesquita Filho" (<a href="https://www.fca.unesp.br">UNESP</a>)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2017 - September 2019</h6>
-          <p>Master Degree in Agronomy - Irrigation and Drainage</p>
-          <li>Dissertation title: "Modelagem espacial da recarga das águas subterrâneas sob diferentes usos e coberturas da terra" (<a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/Dissertation_In_Portuguese.pdf">In Portuguese</a>) - "Spatial modeling of groundwater recharge under different land uses and land cover"</li>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Universidade Estadual Paulista "Júlio de Mesquita Filho" (<a href="https://www.sorocaba.unesp.br">UNESP</a>)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2017</h6>
-          <p>Environmental Engineering</p>
-          <li>Monograph Title: "Avaliação de Impactos Ambientais de uma Transposição Fluvial Aplicada ao Cálculo da Compensação Ambiental" (<a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/TG%202%20-%20Cesar%20Oliveira.pdf">In Portuguese</a>) - "Assessment of Environmental Impacts of a Fluvial Transposition Applied to the Calculation of Environmental Compensation"</li>
-
-        </div>
-    </div>
-
-<!-- Publicaciones -->
-      <div class="w3-container w3-card w3-black">
-        <h2 class="w3-text-white w3-padding-16"><i class="fa fa-book fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Publications</h2>
-	 <span id="badgeCont752"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont752&rid=T-7460-2019"></script></span>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Papers</b></h5>
-        <ol>
-          <li>Silva, C. O. F., Santarosa, L.V., Santos, V., Manzione, R. L., Gastmans, D. Predicting oxygen-18 and deuterium over South America: local meteoric water lines for countries and biogeographical regions. Hydrological Sciences Journal, v. 70, p. 37-50, <a href="http://dx.doi.org/10.1080/02626667.2024.2425397">http://dx.doi.org/10.1080/02626667.2024.2425397</a>, 2025.</li>
-	  <li>Silva, C. O. F., Grego, C. R., Manzione, R. L., Oliveira, S. R. M., Rodrigues, G. C., Rodrigues, C. A. G. V. Delineation of management zones dealing with low sampling and outliers. Precision Agriculture, v. 267, n. 19, <a href="http://dx.doi.org/10.1007/s11119-024-10218-w">http://dx.doi.org/10.1007/s11119-024-10218-w</a>, 2025.</li>
-	  <li>Silva, C.d.O.F., Manzione, R.L., Silva Neto, E.P.d., Bezerra, U.A., Cunha, J.E. Fusion of Remotely Sensed Data with Monitoring Well Measurements for Groundwater Level Management. Agriengineering, v. 7, n. 14, <a href="http://dx.doi.org/10.3390/agriengineering7010014">http://dx.doi.org/10.3390/agriengineering7010014</a>, 2025.</li>
-	  <li>Santarosa, L.V., Silva, C. O. F., Hirigoyen, A., Quaggio, C.S. Water Consumption Assessment of Afforestation and Natural Vegetation Areas with a Remote Sensing Approach. Water, v. 17, n. 1597, <a href="http://dx.doi.org/10.3390/w17111597">http://dx.doi.org/10.3390/w17111597</a>, 2025.</li>
-	  <li>Silva, C. O. F., Teixeira, A. H. C., Manzione, R. L. agriwater: An R package for spatial modelling of energy balance and actual evapotranspiration using satellite images and agrometeorological data. Environmental Modelling & Software, v. 120, p. 104497, <a href="http://dx.doi.org/10.1016/j.envsoft.2019.104497">http://dx.doi.org/10.1016/j.envsoft.2019.104497</a>, 2019.</li>
-          <li>Silva, C. O. F., Manzione, R. L., Oliveira, S. R. M. Exploring 20-year applications of geostatistics in precision agriculture in Brazil: what?s next? Precision Agriculture, v. 6, p. 1-34, <a href="https://doi.org/10.1007/s11119-023-10041-9">https://doi.org/10.1007/s11119-023-10041-9</a>, 2023.</li>
-          <li>Silva, C. O. F., Grego, C. R., Manzione, R. L., Oliveira, S. R. M. Improving Coffee Yield Interpolation in the Presence of Outliers Using Multivariate Geostatistics and Satellite Data. Agriengineering, v. 6, p. 81-94, <a href="https://doi.org/10.3390/agriengineering6010006">https://doi.org/10.3390/agriengineering6010006</a>, 2024.</li>
-          <li>Silva, C. O. F., Manzione, R. L., Caldas, M. M. Net water flux and land use shifts across the Brazilian Cerrado between 2000 and 2019. Regional Environmental Change, v. 23, p. 151, <a href="http://dx.doi.org/10.1007/s10113-023-02127-x">http://dx.doi.org/10.1007/s10113-023-02127-x</a>, 2023.</li>
-	  <li>Silva, C. O. F., Grego, C. R., Manzione, R. L., Oliveira, S. R. M., Rodrigues, G. C., Rodrigues, C. A. G., Speranza, E. A., Luchiari, A., Koenigkan, L. V. Summarizing soil chemical variables into homogeneous management zones - case study in a specialty coffee crop. Smart Agricultural Technology, v. 7, p. 100418, <a href="http://dx.doi.org/10.1016/j.atech.2024.100418">http://dx.doi.org/10.1016/j.atech.2024.100418</a>, 2024.</li>
-          <li>Teixeira, A., Leivas, J., Takemura, C., Bayma, G., Garçon, E., Silva, C. O. F. Remote sensing environmental indicators for monitoring spatial and temporal dynamics of weather and vegetation conditions: applications for Brazilian biomes. Environmental Monitoring and Assessment, v. 195, p. 944, <a href="https://doi.org/10.1007/s10661-023-11560-8">https://doi.org/10.1007/s10661-023-11560-8</a>, 2023.</li>
-          <li>Silva, C. O. F., Matulovic, M., Manzione, R. L. New dilemmas, old problems: advances in data analysis and its geoethical implications in groundwater management. SN Applied Sciences, v. 3, p. 607, <a href="http://dx.doi.org/10.1007/s42452-021-04600-w">http://dx.doi.org/10.1007/s42452-021-04600-w</a>, 2021.</li>          
-	  <li>Manzione, R. L., Silva, C. O. F.,  Castrignanò, A. A combined geostatistical approach of data fusion and stochastic simulation for probabilistic assessment of shallow water table level risk. Science of Total Environment, v. 765, p. 142743, <a href="https://doi.org/10.1016/j.scitotenv.2020.142743">https://doi.org/10.1016/j.scitotenv.2020.142743</a>, 2021.</li>
-	  <li>Manzione, R. L., Silva, C. O. F. Expansion of biofuel cash-crops and its geoethical implications in the scope of groundwater governance. Sustainable Water Resources Management, v. 8, p. 34, <a href="https://doi.org/10.1007/s40899-022-00627-y">https://doi.org/10.1007/s40899-022-00627-y</a>, 2021.</li>
-	  <li>Magnoni, P. H. J., Silva, C. O. F., Manzione, R. L. Groundwater recharge and water table depth levels modelling using remotely sensed data and cloud-computing. Sustainable Water Resources Management, v. 6 , p.113, <a href="https://doi.org/10.1007/s40899-020-00469-6">https://doi.org/10.1007/s40899-020-00469-6</a>, 2020.</li>
-          <li>Teixeira, A. H. C., Pacheco, E., Silva, C. O. F., Dompieri, M., Leivas, J. SAFER applications for water productivity assessments with aerial camera onboard a remotely piloted aircraft (RPA). A rainfed corn study in Northeast Brazil. Remote Sensing Applications: Society and Environment, v. 22, p. 100514, <a href="http://dx.doi.org/10.1016/j.rsase.2021.100514">http://dx.doi.org/10.1016/j.rsase.2021.100514</a>, 2021.</li>
-	  <li>Silva, C. O. F., Manzione, R. L., Albuquerque Filho, J. L. Combining remotely sensed actual evapotranspiration and GIS analysis for groundwater level modeling. Environmental Earth Sciences, v. 78, p. 462-477, <a href="http://dx.doi.org/10.1007/s12665-019-8467-x">http://dx.doi.org/10.1007/s12665-019-8467-x</a>, 2019.</li>
-   	  <li>Silva, C. O. F., Manzione, R. L., Albuquerque Filho, J. L. Large-Scale Spatial Modeling of Crop Coefficient and Biomass Production in Agroecosystems in Southeast Brazil. Horticulturae, v. 4, p. 44-64, <a href="http://dx.doi.org/10.3390/horticulturae4040044">http://dx.doi.org/10.3390/horticulturae4040044</a>, 2018.</li>
-	  <li>Silva, C. O. F. Inteligência artificial na pesquisa em irrigação e drenagem.  IRRIGA, v. 28, p. 417-426, <a href="http://dx.doi.org/10.15809/irriga.2023v28n2p417-426">http://dx.doi.org/10.15809/irriga.2023v28n2p417-426</a>, 2023.</li>
-          <li>Silva, C. O. F. Isótopos estáveis de água na pesquisa em irrigação.  IRRIGA, v. 28, p. 821–824, <a href="http://dx.doi.org/10.15809/irriga.2023v28n4p821-824">http://dx.doi.org/10.15809/irriga.2023v28n4p821-824</a>, 2023.</li> 
-	  <li>Silva, C. O. F., Rodrigues, C. A. G., Grego, C. R., Quartaroli, C. F. Influência de atributos físicos, químicos e hídricos de solos e área foliar nos níveis de degradação de pastagens cultivadas. Fórum Ambiental da Alta Paulista, v. 20, p. 72-87, <a href="http://dx.doi.org/10.17271/1980082720220244108">http://dx.doi.org/10.17271/1980082720220244108</a>, 2024.</li>
-	  <li>Silva, C. O. F., Magnoni, P. H. J., Manzione, R. L. Sensoriamento remoto orbital para modelagem da evapotranspiração: síntese teórica e aplicações em computação na nuvem. Brazilian Journal of Biosystems Engineering, v. 15, n. 3, p. 425-468, <a href="http://dx.doi.org/10.18011/bioeng2021v15n3p425-468">http://dx.doi.org/10.18011/bioeng2021v15n3p425-468</a>, 2021.</li>
-	  <li>Silva, C. O. F., Putti, F. F., Manzione, R. L. Panorama da evolução da agricultura irrigada no Sudeste do Brasil entre 2006 e 2017. IRRIGA, "Edição Especial – Sudeste", v. 1, n. 3, p. 446-457, <a href="http://dx.doi.org/10.15809/irriga.2021v1n3p446-457">http://dx.doi.org/10.15809/irriga.2021v1n3p446-457</a>, 2021.</li>
-	  <li>Silva, C. O. F. Classificação supervisionada de área irrigada utilizando índices espectrais de imagens Landsat-8 com Google Earth Engine. IRRIGA, v. 25, n. 1, p. 160-169, <a href="https://doi.org/10.15809/irriga.2020v25n1p160-169">https://doi.org/10.15809/irriga.2020v25n1p160-169</a>, 2020.</li>
-	  <li>Manzione, R. L., Silva, C. O. F., Paes, C. O. Modelagem da favorabilidade à recarga das águas subterrâneas pelo paradigma da lógica difusa. Águas Subterrâneas, v. 35, n. 2, e-30030, <a href="https://doi.org/10.14295/ras.v35i2.30030">https://doi.org/10.14295/ras.v35i2.30030</a>, 2021.</li>
-	  <li>Cunha, A. C., Putti, F. F., Silva, C. O. F. Evapotranspiração de referência ao longo do estado de Minas Gerais como guia para gestão regionalizada da irrigação. IRRIGA, "Edição Especial – Sudeste", v. 1, n. 3, p. 458-467, <a href="http://dx.doi.org/10.15809/irriga.2021v1n3p458-467">http://dx.doi.org/10.15809/irriga.2021v1n3p458-467</a>, 2021.</li>
-	  <li>Magnoni, P. H. J., Silva, C. O. F., Manzione, R. L. Sensoriamento remoto aplicado ao manejo da irrigação em áreas com escassez de dados: estudo de caso em pivô central em Itatinga-SP. IRRIGA, "Edição Especial – Sudeste", v. 1, n. 3, p. 585-598, <a href="http://dx.doi.org/10.15809/irriga.2021v1n3p585-598">http://dx.doi.org/10.15809/irriga.2021v1n3p585-598</a>, 2021.</li>
-	  <li>Silva, C. O. F., Teixeira, A. H. C., Manzione, R. L. Bayesian Regularized Neural Networks Approach and Uncertainty Analysis for Reference Evapotranspiration Modeling on Semiarid Agroecosystems. Brazilian Journal of Biosystems Engineering, v. 14, n. 1, p. 73-84, <a href="http://dx.doi.org/10.18011/bioeng2020v14n1p73-84">http://dx.doi.org/10.18011/bioeng2020v14n1p73-84</a>, 2020.</li>
-          <li>Silva, C. O. F., Manzione, R. L., Albuquerque Filho, J. L. Comparison of SAFER and METRIC-Based Actual Evapotranspiration Models in a Subtropical Area of Brazil. Irriga, v. 1, p. 48-55, <a href="http://dx.doi.org/10.15809/irriga.2019v1n1p48-55">http://dx.doi.org/10.15809/irriga.2019v1n1p48-55</a>, 2019.</li>
-          <li>Silva, C. O. F., Manzione, R. L. Revisitando a regionalização de vazões na região do Médio Paranapanema no estado de São Paulo: utilização de curvas de permanência em microbacias hidrográficas. Revista do Instituto Geológico, v. 41, n. 2, p. 1-13, <a href="https://doi.org/10.33958/revig.v41i2.678">https://doi.org/10.33958/revig.v41i2.678</a>, 2020.</li>
-          <li> Silva, C. O. F., Manzione, R. L. Dinâmica do uso e ocupação da terra na área de proteção ambiental -cuesta- - perímetro Botucatu, SP entre 2000 e 2016. GEOUSP: espaço e tempo, v. 23, p. 198-214, <a href="http://dx.doi.org/10.11606/issn.2179-0892.geousp.2019.147582">http://dx.doi.org/10.11606/issn.2179-0892.geousp.2019.147582</a>, 2019.</li>
-          <li> Silva, C. O. F., Medeiros, G. A. Cálculo da compensação ambiental de transposição entre bacias utilizando análise de paisagem: estudo de caso na Bacia do rio Jundiaí Mirim. Brazilian Journal of Development, v. 6, n. 8, p. 60848-60868, <a href="https://doi.org/10.34117/bjdv6n8-486">https://doi.org/10.34117/bjdv6n8-486</a>, 2020.</li>
-          <li> Silva, C. O. F., Manzione, R. L., Teixeira, A. H. C. Modelagem espacial da evapotranspiração e produtividade hídrica na porção paulista do afloramento do aquífero Guarani entre 2013 e 2015. Holos Environment (Online), v. 18, p. 126-140, <a href="https://doi.org/10.14295/holos.v18i2.12266">http://dx.doi.org/10.14295/holos.v18i2.12266</a>, 2018.</li>
-          <li> Silva, C. O. F., Goveia, D. Avaliação da qualidade ambiental de corpos hídricos urbanos utilizando análise multivariada. INTERAÇÕES, v. 20, p. 947-958, <a href="http://dx.doi.org/10.20435/inter.v0i0.1832">https://doi.org/10.20435/inter.v0i0.1832</a>, 2019.</li>
-          <li> Silva, C. O. F., Medeiros, G. A. Avaliação ambiental e morfométrica da bacia do rio Jundiaí-Mirim: diagnósticos e subsídios para gestão ambiental. Boletim Campineiro de Geografia, v. 7, n.2, p. 441-454, <a href="https://doi.org/10.54446/bcg.v7i2.343">https://doi.org/10.54446/bcg.v7i2.343</a>, 2017.</li>
-          <li> Pollo, R. A.,  Silva, C. O. F., Cardoso, L. G., Lessa, L. G. F. Fatores de perturbação identificados em Área de Proteção Ambiental Corumbataí-Botucatu-Tejupá, Perímetro Botucatu, Estado de São Paulo. RA'E GA (UFPR), v. 46, p. 204-214,  <a href="https://doi.org/10.5380/raega.v46i1.59160">https://doi.org/10.5380/raega.v46i1.59160</a>, 2019.</li>
-          <hr>
-        </ol>
-        </div>
-	
-	<div class="w3-container">
-          <h5 class="w3-opacity"><b>Book Chapters</b></h5>
-        <ol>
-	  <li>Silva, C. O. F. The challenge of model validation and its (hydrogeo)ethical implications for water security. O. Bozorg-Haddad; B. Zolghadr-Asli (Org.). Computational Intelligence for Water & Environmental Sciences, Chapter 22, <a href="https://doi.org/10.1007/978-981-19-2519-1">https://doi.org/10.1007/978-981-19-2519-1</a>, 2021.</li>
-          <li>Silva, C. O. F., Manzione, R. L. Public geospatial data for groundwater governance: The Brazilian case. In: M. Abrunhosa; A. Chambel; S. Peppoloni; H. I. Chaminé. (Org.). Advances in Geoethics and Groundwater Management: theory and practice for a sustainable development (Proceedings of the 1st Congress on Geoethics and Groundwater Management (GEOETH&GWM'20), Porto - Portugal 2020), p. 51-54, <a href="http://dx.doi.org/10.1007/978-3-030-59320-9_12">http://dx.doi.org/10.1007/978-3-030-59320-9_12</a>, 2020.</li>
-          <li>Silva, C. O. F., Matulovic, M., Manzione, R. L. The geoethics of using geospatial Big Data in water governance. In: M. Abrunhosa; A. Chambel; S. Peppoloni; H. I. Chaminé. (Org.). Advances in Geoethics and Groundwater Management: theory and practice for a sustainable development(Proceedings of the 1st Congress on Geoethics and Groundwater Management (GEOETH&GWM'20), Porto - Portugal 2020), p. 447-450, <a href="http://dx.doi.org/10.1007/978-3-030-59320-9_94">http://dx.doi.org/10.1007/978-3-030-59320-9_94</a>, 2020.</li>
-          <hr>
-        </ol>
-        </div>
-	      
+    <main id="main" class="content">
+      <section aria-labelledby="work-title">
+        <div class="section-head">
+          <h2 id="work-title">Work Experience</h2>
+          <p>Selected roles and responsibilities</p>
         </div>
 
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
+        <div class="timeline">
+          <article class="entry">
+            <h3>Data Scientist - R&amp;D Research &amp; Data Science / <a href="https://www.stormgeo.com/" target="_blank" rel="noopener noreferrer">StormGeo</a>, SP, Brazil / Bergen, Norway</h3>
+            <p class="meta">December 2021 - Current</p>
+            <ul>
+              <li>Specialist in vegetation management using satellite data and statistical learning.</li>
+              <li>Main project: GridEyeS with HVL, eSmart, European Space Agency (ESA) and ENTSO-e.</li>
+              <li>Tools: AWS RDS, R, Python, Jupyter.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <h3>Researcher I / <a href="http://www.agroicone.com.br" target="_blank" rel="noopener noreferrer">Agroicone</a>, SP, Brazil</h3>
+            <p class="meta">March 2020 - December 2021</p>
+            <ul>
+              <li>Information systems, database administration, computational optimization, and GIS environments.</li>
+              <li>Geographical data modeling and maintenance of spatial and tabular databases in AWS.</li>
+              <li>Tools: AWS RDS, PostgreSQL, R, Python, Jupyter, Google Earth Engine.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <h3>Research Assistant III / <a href="http://www.agroicone.com.br" target="_blank" rel="noopener noreferrer">Agroicone</a>, SP, Brazil</h3>
+            <p class="meta">April 2019 - February 2020</p>
+            <ul>
+              <li>Geographical data modeling and maintenance of spatial databases.</li>
+              <li>Environmental compliance assessment with RenovaBIO and Bonsucro standards.</li>
+              <li>Large-scale land-use classification project management with Google Earth Engine and CNNs.</li>
+              <li>Tools: PostgreSQL, R, Python, Jupyter, Google Earth Engine, QGIS, ArcGIS.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <h3>Data Engineer / <a href="http://www.siaabr.com" target="_blank" rel="noopener noreferrer">SIAA</a>, SP, Brazil</h3>
+            <p class="meta">October 2018 - April 2019</p>
+            <ul>
+              <li>Implementation of artificial neural networks for oceanographic applications.</li>
+              <li>Maintenance of large-scale hydrodynamic models on Linux servers.</li>
+              <li>Environmental consulting on water resources management projects.</li>
+              <li>Tools: R, Python, Keras, TensorFlow, PyTorch, QGIS, Linux, CentOS, C++, AWS, JavaScript.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <h3>Geoprocessing Trainee / <a href="http://www.agroicone.com.br/" target="_blank" rel="noopener noreferrer">Agroicone</a>, SP, Brazil</h3>
+            <p class="meta">September 2016 - June 2017</p>
+            <ul>
+              <li>Spatial data modeling and maintenance of geographic databases.</li>
+              <li>WEBGIS platform development.</li>
+              <li>Tools: PostgreSQL, ArcGIS, QGIS, i3geo, Leaflet.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="education-title">
+        <div class="section-head">
+          <h2 id="education-title">Education</h2>
+          <p>Academic background</p>
+        </div>
+
+        <div class="split">
+          <article class="education-item">
+            <h3>Universidade Estadual de Campinas (UNICAMP)</h3>
+            <p class="meta">March 2021 - April 2024</p>
+            <p>PhD in Agricultural Engineering</p>
+            <ul>
+              <li>Thesis: <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/Thesis_Cesar_FEAGRI_Final_19_Abril_2024.pdf" target="_blank" rel="noopener noreferrer">Data fusion for improving the modeling of yield and management zones in specialty coffees</a></li>
+            </ul>
+          </article>
+
+          <article class="education-item">
+            <h3>Universidade Estadual Paulista "Júlio de Mesquita Filho" (UNESP)</h3>
+            <p class="meta">August 2017 - September 2019</p>
+            <p>Master Degree in Agronomy - Irrigation and Drainage</p>
+            <ul>
+              <li>Dissertation: <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/Dissertation_In_Portuguese.pdf" target="_blank" rel="noopener noreferrer">Modelagem espacial da recarga das águas subterrâneas sob diferentes usos e coberturas da terra</a></li>
+            </ul>
+          </article>
+
+          <article class="education-item">
+            <h3>Universidade Estadual Paulista "Júlio de Mesquita Filho" (UNESP)</h3>
+            <p class="meta">2012 - 2017</p>
+            <p>Environmental Engineering</p>
+            <ul>
+              <li>Monograph: <a href="https://raw.githubusercontent.com/cesarofs/cesarofs.github.io/master/TG%202%20-%20Cesar%20Oliveira.pdf" target="_blank" rel="noopener noreferrer">Avaliação de Impactos Ambientais de uma Transposição Fluvial Aplicada ao Cálculo da Compensação Ambiental</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="publications-title">
+        <div class="section-head">
+          <h2 id="publications-title">Publications</h2>
+          <p>Homepage-friendly selection</p>
+        </div>
+
+        <details open>
+          <summary>Papers</summary>
+          <ol class="publication-list" style="margin-top: 16px;">
+            <li class="pub-item">
+              <p class="meta">2025</p>
+              <p>Silva, C. O. F., Santarosa, L. V., Santos, V., Manzione, R. L., Gastmans, D. Predicting oxygen-18 and deuterium over South America: local meteoric water lines for countries and biogeographical regions. Hydrological Sciences Journal.</p>
+              <a href="http://dx.doi.org/10.1080/02626667.2024.2425397" target="_blank" rel="noopener noreferrer">DOI</a>
+            </li>
+
+            <li class="pub-item">
+              <p class="meta">2025</p>
+              <p>Silva, C. O. F., Grego, C. R., Manzione, R. L., Oliveira, S. R. M., Rodrigues, G. C., Rodrigues, C. A. G. V. Delineation of management zones dealing with low sampling and outliers. Precision Agriculture.</p>
+              <a href="http://dx.doi.org/10.1007/s11119-024-10218-w" target="_blank" rel="noopener noreferrer">DOI</a>
+            </li>
+
+            <li class="pub-item">
+              <p class="meta">2025</p>
+              <p>Silva, C. O. F., Manzione, R. L., Silva Neto, E. P. d., Bezerra, U. A., Cunha, J. E. Fusion of Remotely Sensed Data with Monitoring Well Measurements for Groundwater Level Management. Agriengineering.</p>
+              <a href="http://dx.doi.org/10.3390/agriengineering7010014" target="_blank" rel="noopener noreferrer">DOI</a>
+            </li>
+
+            <li class="pub-item">
+              <p class="meta">2025</p>
+              <p>Santarosa, L. V., Silva, C. O. F., Hirigoyen, A., Quaggio, C. S. Water Consumption Assessment of Afforestation and Natural Vegetation Areas with a Remote Sensing Approach. Water.</p>
+              <a href="http://dx.doi.org/10.3390/w17111597" target="_blank" rel="noopener noreferrer">DOI</a>
+            </li>
+
+            <li class="pub-item">
+              <p class="meta">2024</p>
+              <p>Silva, C. O. F., Grego, C. R., Manzione, R. L., Oliveira, S. R. M. Improving Coffee Yield Interpolation in the Presence of Outliers Using Multivariate Geostatistics and Satellite Data. Agriengineering.</p>
+              <a href="https://doi.org/10.3390/agriengineering6010006" target="_blank" rel="noopener noreferrer">DOI</a>
+            </li>
+
+            <li class="pub-item">
+              <p class="meta">2024</p>
+              <p>Silva, C. O. F., Grego, C. R., Manzione, R. L., Oliveira, S. R. M., Rodrigues, G. C., Rodrigues, C. A. G., Speranza, E. A., Luchiari, A., Koenigkan, L. V. Summarizing soil chemical variables into homogeneous management zones - case study in a specialty coffee crop. Smart Agricultural Technology.</p>
+              <a href="http://dx.doi.org/10.1016/j.atech.2024.100418" target="_blank" rel="noopener noreferrer">DOI</a>
+            </li>
+
+            <li class="pub-item">
+              <p class="meta">2023</p>
+              <p>Silva, C. O. F., Manzione, R. L., Caldas, M. M. Net water flux and land use shifts across the Brazilian Cerrado between 2000 and 2019. Regional Environmental Change.</p>
+              <a href="http://dx.doi.org/10.1007/s10113-023-02127-x" target="_blank" rel="noopener noreferrer">DOI</a>
+            </li>
+
+            <li class="pub-item">
+              <p class="meta">2023</p>
+              <p>Silva, C. O. F. Inteligência artificial na pesquisa em irrigação e drenagem. IRRIGA.</p>
+              <a href="http://dx.doi.org/10.15809/irriga.2023v28n2p417-426" target="_blank" rel="noopener noreferrer">DOI</a>
+            </li>
+          </ol>
+        </details>
+
+        <details style="margin-top: 14px;">
+          <summary>Book chapters</summary>
+          <ol class="publication-list" style="margin-top: 16px;">
+            <li class="pub-item">
+              <p class="meta">2021</p>
+              <p>Silva, C. O. F. The challenge of model validation and its (hydrogeo)ethical implications for water security.</p>
+              <a href="https://doi.org/10.1007/978-981-19-2519-1" target="_blank" rel="noopener noreferrer">Link</a>
+            </li>
+            <li class="pub-item">
+              <p class="meta">2020</p>
+              <p>Silva, C. O. F., Manzione, R. L. Public geospatial data for groundwater governance: The Brazilian case.</p>
+              <a href="http://dx.doi.org/10.1007/978-3-030-59320-9_12" target="_blank" rel="noopener noreferrer">Link</a>
+            </li>
+            <li class="pub-item">
+              <p class="meta">2020</p>
+              <p>Silva, C. O. F., Matulovic, M., Manzione, R. L. The geoethics of using geospatial Big Data in water governance.</p>
+              <a href="http://dx.doi.org/10.1007/978-3-030-59320-9_94" target="_blank" rel="noopener noreferrer">Link</a>
+            </li>
+          </ol>
+        </details>
+
+        <p class="small-note" style="margin-top: 16px;">
+          For a better homepage, keep the most relevant items here and move the full bibliography to a dedicated publications page.
+        </p>
+      </section>
+    </main>
   </div>
-  
-  <!-- End Page Container -->
-</div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <a href="https://github.com/cesarofs"><i class="fa fa-github w3-hover-opacity"></i></a>
-  <a href="https://www.researchgate.net/profile/Cesar_De_Oliveira_Ferreira_Silva"><i class="fa fa-researchgate w3-hover-opacity"></i></a>
-  <a href="https://www.linkedin.com/in/cesarofs"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
+  <footer class="footer" aria-label="Footer">
+    <div>
+      <strong>Find me on social media</strong>
+      <div class="social" style="margin-top: 8px;">
+        <a href="https://github.com/cesarofs" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.researchgate.net/profile/Cesar_De_Oliveira_Ferreira_Silva" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+        <a href="https://www.linkedin.com/in/cesarofs" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <div>
+      <span>Powered by custom HTML/CSS for GitHub Pages</span>
+    </div>
+  </footer>
 </body>
 </html>
